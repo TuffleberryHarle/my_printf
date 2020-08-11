@@ -1,0 +1,95 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_atoi.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_atoi.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_bzero.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_bzero.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_countwords.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_countwords.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_isalnum.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_isalnum.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_isalpha.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_isalpha.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_isascii.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_isascii.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_isdigit.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_isdigit.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_isprint.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_isprint.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_isspace.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_isspace.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_itoa.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_itoa.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memalloc.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memalloc.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memccpy.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memccpy.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memchr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memchr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memcmp.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memcmp.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memcpy.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memcpy.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memdel.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memdel.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memmove.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memmove.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_memset.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_memset.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putchar.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putchar.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putchar_fd.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putchar_fd.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putendl.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putendl.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putendl_fd.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putendl_fd.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putnbr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putnbr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putnbr_fd.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putnbr_fd.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putstr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putstr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_putstr_fd.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_putstr_fd.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strcat.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strcat.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strchr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strchr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strclr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strclr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strcmp.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strcpy.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strcpy.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strdel.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strdel.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strdup.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strdup.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strequ.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strequ.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_striter.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_striter.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_striteri.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_striteri.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strjoin.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strjoin.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strlcat.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strlcat.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strlen.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strlen.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strmap.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strmap.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strmapi.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strmapi.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strncat.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strncat.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strncmp.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strncmp.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strncpy.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strncpy.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strnequ.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strnequ.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strnew.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strnew.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strnstr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strnstr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strrchr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strrchr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strsplit.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strsplit.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strstr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strstr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strsub.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strsub.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_strtrim.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strtrim.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_tolower.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_tolower.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/libft/ft_toupper.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_toupper.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/conversions.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/conversions.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/ft_printf.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/ft_printf.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/modifiers.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/modifiers.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_binary.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_binary.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_char.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_char.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_float.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_float.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_float2.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_float2.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_hex.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_hex.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_hex2.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_hex2.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_int.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_int.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_int2.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_int2.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_nonprint.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_nonprint.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_oct.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_oct.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_oct2.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_oct2.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_ptr.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_ptr.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_ptr2.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_ptr2.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_str.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_str.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/type_u.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/type_u.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/utility.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/utility.c.obj"
+  "C:/Users/78/CLionProjects/ft_printf/srcs/utility_2.c" "C:/Users/78/CLionProjects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/srcs/utility_2.c.obj"
+  )
+set(CMAKE_C_COMPILER_ID "MSVC")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../includes"
+  "../libft/includes"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
