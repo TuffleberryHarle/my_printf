@@ -12,14 +12,6 @@
 
 #include "ft_printf.h"
 
-int		retmsg(char *str)
-{
-	ft_putstr(str);
-	ft_putchar('\n');
-	exit(1);
-	
-}
-
 int		usual_parser(va_list args, t_struct *params, const char *fmt)
 {
 	params->i++;
