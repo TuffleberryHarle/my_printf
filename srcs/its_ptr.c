@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_ptr.c                                         :+:      :+:    :+:   */
+/*   its_ptr.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/06 14:45:48 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/06 14:58:36 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:08:21 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:08:22 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void	ptr_printer(t_struct *params, char *s)
 {
 	ptr_checker(params);
 	if (params->width && params->width > params->len_before
-	&& !params->zero && !params->minus)
+		&& !params->zero && !params->minus)
 		ptr_printer_2(params, s);
 	else if (params->width && params->width > params->len_before
 	&& params->zero && !params->minus)
@@ -62,7 +62,7 @@ void	ptr_printer(t_struct *params, char *s)
 	{
 		params->n_printed_here += write(1, "0x", 2);
 		while (params->n_printed_here < params->prec
-		+ 2 - params->len_before)
+										+ 2 - params->len_before)
 			params->n_printed_here += write(1, "0", 1);
 		params->n_printed_here += write(1, s, params->len_before);
 	}

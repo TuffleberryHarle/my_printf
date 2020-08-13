@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_oct2.c                                        :+:      :+:    :+:   */
+/*   its_oct_2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/20 13:36:52 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/20 04:36:11 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:08:14 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:08:16 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ char	*oct_with_prec(t_struct *prms, char *s, int i)
 	int		j;
 
 	j = 0;
-	if (!(s_prec = (char *)malloc(sizeof(char) *
-			(prms->prec + 1))))
+	if (!(s_prec = (char *)malloc(sizeof(char)
+			* (prms->prec + 1))))
 		s_prec = NULL;
 	while (i < (prms->prec - prms->len_before))
 	{

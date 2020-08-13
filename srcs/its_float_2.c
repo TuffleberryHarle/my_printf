@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_float2.c                                      :+:      :+:    :+:   */
+/*   its_float_2.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coclayto <coclayto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/07 13:19:20 by coclayto          #+#    #+#             */
-/*   Updated: 2020/06/16 22:14:03 by coclayto         ###   ########.fr       */
+/*   Created: 2020/08/13 16:07:23 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:07:25 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ void	f_increment(t_struct *params)
 
 	f_before = ft_atof(params->f_before);
 	f_before++;
-	params->f_before = itoa_base_uint((uintmax_t) f_before, 10);
+	params->f_before = itoa_base_uint((uintmax_t)f_before, 10);
 }
 
 int		is_odd(char symb)

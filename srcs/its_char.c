@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_char.c                                        :+:      :+:    :+:   */
+/*   its_char.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coclayto <coclayto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 23:04:46 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/03 08:23:36 by coclayto         ###   ########.fr       */
+/*   Created: 2020/08/13 16:07:03 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:07:05 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	char_printer(t_struct *params, char c, int indent)
 		{
 			while (indent--)
 				params->n_printed_here += (params->zero)
-						? write(1, "0", 1) :
-						                  write(1, " ", 1);
+						? write(1, "0", 1)
+						: write(1, " ", 1);
 		}
 	}
 	if (c == '\0')

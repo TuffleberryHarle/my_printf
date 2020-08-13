@@ -71,7 +71,6 @@ add_executable(ft_printf
         srcs/its_float.c
         srcs/its_float_2.c
         srcs/its_hex.c
-        srcs/its_hex_2.c
         srcs/its_int.c
         srcs/its_int_2.c
         srcs/its_unprintable.c
@@ -82,4 +81,4 @@ add_executable(ft_printf
         srcs/its_str.c
         srcs/its_uint.c
         srcs/extra_1.c
-        srcs/extra_2.c)
+        srcs/extra_2.c srcs/modifiers.c srcs/extra_1.c srcs/extra_2.c srcs/ft_printf.c srcs/its_binary.c srcs/its_char.c srcs/its_float.c srcs/its_float_2.c srcs/its_hex.c srcs/its_hex_2.c srcs/its_int.c srcs/its_int_2.c srcs/its_oct.c srcs/its_oct_2.c srcs/its_ptr.c srcs/its_ptr_2.c srcs/its_str.c srcs/its_uint.c srcs/its_unprintable.c srcs/modifiers.c srcs/conversions.c)

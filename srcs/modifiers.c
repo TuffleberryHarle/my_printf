@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   modifier.c                                         :+:      :+:    :+:   */
+/*   modifiers.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tharle <tharle@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/21 16:46:52 by tharle            #+#    #+#             */
-/*   Updated: 2020/03/13 02:22:13 by tharle           ###   ########.fr       */
+/*   Created: 2020/08/13 16:28:39 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:28:42 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	precision_determer(const char *fmt, t_struct *params)
+void	precision_determer(const char *fmt, t_struct *prm)
 {
-	if (fmt[params->i] == '.')
+	if (fmt[prm->i] == '.')
 	{
-		params->i++;
-		params->dot++;
+		prm->i++;
+		prm->dot++;
 	}
-	if (ft_isdigit(fmt[params->i]))
+	if (ft_isdigit(fmt[prm->i]))
 	{
-		params->prec = ft_atoi(&fmt[params->i]);
-		if (fmt[params->i] == '0')
-			params->prec_zero++;
-		params->i += uint_num_len(params->prec, 10);
+		prm->prec = ft_atoi(&fmt[prm->i]);
+		if (fmt[prm->i] == '0')
+			prm->prec_zero++;
+		prm->i += uint_num_len(prm->prec, 10);
 	}
 }
 
-void	width_determer(const char *fmt, t_struct *params)
+void	width_determer(const char *fmt, t_struct *prm)
 {
-	if (ft_isdigit(fmt[params->i]))
+	if (ft_isdigit(fmt[prm->i]))
 	{
-		params->width = ft_atoi(&fmt[params->i]);
-		params->i += uint_num_len(params->width, 10);
+		prm->width = ft_atoi(&fmt[prm->i]);
+		prm->i += uint_num_len(prm->width, 10);
 	}
 }
 
@@ -59,34 +59,35 @@ void	flag_modifier(const char *fmt, t_struct *params)
 		params->zero = 0;
 }
 
-void	length_hooker(const char *fmt, t_struct *params)
+void	length_hooker(const char *fmt, t_struct *prms)
 {
-	if (ft_strchr("hlLjz", fmt[params->i]))
+	if (ft_strchr("hlLjz", fmt[prms->i]))
 	{
-		while (ft_strchr("hlLjz", fmt[params->i]))
+		while (ft_strchr("hlLjz", fmt[prms->i]))
 		{
-			if (fmt[params->i] == 'h' && params->length < SHORT)
-				params->length = SHORT;
-			if (fmt[params->i] == 'h' && fmt[params->i + 1] == 'h'
-			&& params->length < SHORTSHORT)
-				params->length = SHORTSHORT;
-			if (fmt[params->i] == 'l' && params->length < LONG)
-				params->length = LONG;
-			if (fmt[params->i] == 'l' && fmt[params->i + 1] == 'l'
-			&& params->length < LONGLONG)
-				params->length = LONGLONG;
-			if (fmt[params->i] == 'L')
-				params->length = LONGDOUBLE;
-			if (fmt[params->i] == 'z' && params->length < SIZE_T)
-				params->length = SIZE_T;
-			if (fmt[params->i] == 'j' && params->length < INT_UINT_MAX)
-				params->length = INT_UINT_MAX;
-			params->i++;
+			if (fmt[prms->i] == 'h' && prms->len < SHORT)
+				prms->len = SHORT;
+			if (fmt[prms->i] == 'h' && fmt[prms->i + 1] == 'h'
+				&& prms->len < SHORTSHORT)
+				prms->len = SHORTSHORT;
+			if (fmt[prms->i] == 'l' && prms->len < LONG)
+				prms->len = LONG;
+			if (fmt[prms->i] == 'l' && fmt[prms->i + 1] == 'l'
+				&& prms->len < LONGLONG)
+				prms->len = LONGLONG;
+			if (fmt[prms->i] == 'L')
+				prms->len = LONGDOUBLE;
+			if (fmt[prms->i] == 'z' && prms->len < SIZE_T)
+				prms->len = SIZE_T;
+			if (fmt[prms->i] == 'j' && prms->len < _UINT_MAX)
+				prms->len = _UINT_MAX;
+			prms->i++;
 		}
 	}
 }
 
-int		modifier(va_list args, const char *fmt, t_struct *params)
+int		modifier(va_list args, const char *fmt,
+					t_struct *params)
 {
 	if (args == NULL)
 		return (0);

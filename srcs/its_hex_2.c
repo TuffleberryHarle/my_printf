@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_hex2.c                                        :+:      :+:    :+:   */
+/*   its_hex_2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/20 11:55:06 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/20 20:00:16 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:07:42 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:07:44 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ char	*hex_with_prec(t_struct *params, char *s, int i)
 	int		j;
 
 	j = 0;
-	if (!(s_prec = (char *)malloc(sizeof(char) *
-			(params->prec + 1))))
+	if (!(s_prec = (char *)malloc(sizeof(char)
+			* (params->prec + 1))))
 		s_prec = NULL;
 	while (i < (params->prec - params->len_before))
 	{
@@ -46,7 +46,7 @@ char	*hex_hash(t_struct *params, char *s)
 	i = 0;
 	j = 0;
 	if (!(s_hash = (char *)malloc(sizeof(char)
-			*(params->len_before + 3))))
+			* (params->len_before + 3))))
 		s_hash = NULL;
 	s_hash[i++] = '0';
 	if (params->small_hex)
@@ -69,13 +69,13 @@ void	hex_hash_checker(t_struct *params, int num)
 	if ((num == 0) && (params->len_before == 1))
 		params->zero_arg++;
 	if (!params->width && params->hash &&
-	params->dot && params->zero_arg)
+		params->dot && params->zero_arg)
 		params->hash_case++;
 	if (params->hash && params->width &&
-	!params->prec && params->zero_arg)
+		!params->prec && params->zero_arg)
 		params->hash_case++;
 	if (params->hash && params->dot &&
-	!params->prec && !params->prec_zero)
+		!params->prec && !params->prec_zero)
 		params->hash = 0;
 	if (params->zero_arg)
 		params->hash = 0;

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_nonprint.c                                    :+:      :+:    :+:   */
+/*   its_unprintable.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 18:34:13 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/06 12:33:06 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:09:21 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:09:22 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ void	unprintable_creator(va_list args, t_struct *params)
 		s = "(null)";
 	params->len_before = ft_strlen(s);
 	len_2 = len_determer(s, 0);
-	if (!(s_unpr = (char *)malloc(sizeof(*s_unpr)
-			* ((len_2) + 1)))) s_unpr = "(null)";
+	if (!(s_unpr = (char *)malloc(sizeof(*s_unpr) * ((len_2) + 1))))
+		s_unpr = "(null)";
 	str_recreator(s, s_unpr, 0, 0);
 	params->len_before = len_2;
 	str_printer(params, s_unpr);

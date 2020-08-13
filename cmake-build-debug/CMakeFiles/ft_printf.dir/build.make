@@ -863,22 +863,9 @@ CMakeFiles/ft_printf.dir/srcs/its_hex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/srcs/its_hex.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tharle/CLionProjects/my_printf/srcs/its_hex.c -o CMakeFiles/ft_printf.dir/srcs/its_hex.c.s
 
-CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o: CMakeFiles/ft_printf.dir/flags.make
-CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o: ../srcs/its_hex_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_hex_2.c
-
-CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tharle/CLionProjects/my_printf/srcs/its_hex_2.c > CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.i
-
-CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tharle/CLionProjects/my_printf/srcs/its_hex_2.c -o CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.s
-
 CMakeFiles/ft_printf.dir/srcs/its_int.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_int.c.o: ../srcs/its_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ft_printf.dir/srcs/its_int.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ft_printf.dir/srcs/its_int.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_int.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_int.c
 
 CMakeFiles/ft_printf.dir/srcs/its_int.c.i: cmake_force
@@ -891,7 +878,7 @@ CMakeFiles/ft_printf.dir/srcs/its_int.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_int_2.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_int_2.c.o: ../srcs/its_int_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ft_printf.dir/srcs/its_int_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ft_printf.dir/srcs/its_int_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_int_2.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_int_2.c
 
 CMakeFiles/ft_printf.dir/srcs/its_int_2.c.i: cmake_force
@@ -904,7 +891,7 @@ CMakeFiles/ft_printf.dir/srcs/its_int_2.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.o: ../srcs/its_unprintable.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_unprintable.c
 
 CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.i: cmake_force
@@ -917,7 +904,7 @@ CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_oct.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_oct.c.o: ../srcs/its_oct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ft_printf.dir/srcs/its_oct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ft_printf.dir/srcs/its_oct.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_oct.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_oct.c
 
 CMakeFiles/ft_printf.dir/srcs/its_oct.c.i: cmake_force
@@ -930,7 +917,7 @@ CMakeFiles/ft_printf.dir/srcs/its_oct.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_oct_2.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_oct_2.c.o: ../srcs/its_oct_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_printf.dir/srcs/its_oct_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ft_printf.dir/srcs/its_oct_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_oct_2.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_oct_2.c
 
 CMakeFiles/ft_printf.dir/srcs/its_oct_2.c.i: cmake_force
@@ -943,7 +930,7 @@ CMakeFiles/ft_printf.dir/srcs/its_oct_2.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_ptr.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_ptr.c.o: ../srcs/its_ptr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_printf.dir/srcs/its_ptr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_printf.dir/srcs/its_ptr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_ptr.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_ptr.c
 
 CMakeFiles/ft_printf.dir/srcs/its_ptr.c.i: cmake_force
@@ -956,7 +943,7 @@ CMakeFiles/ft_printf.dir/srcs/its_ptr.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_ptr_2.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_ptr_2.c.o: ../srcs/its_ptr_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_printf.dir/srcs/its_ptr_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_printf.dir/srcs/its_ptr_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_ptr_2.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_ptr_2.c
 
 CMakeFiles/ft_printf.dir/srcs/its_ptr_2.c.i: cmake_force
@@ -969,7 +956,7 @@ CMakeFiles/ft_printf.dir/srcs/its_ptr_2.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_str.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_str.c.o: ../srcs/its_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_printf.dir/srcs/its_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_printf.dir/srcs/its_str.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_str.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_str.c
 
 CMakeFiles/ft_printf.dir/srcs/its_str.c.i: cmake_force
@@ -982,7 +969,7 @@ CMakeFiles/ft_printf.dir/srcs/its_str.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/its_uint.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/its_uint.c.o: ../srcs/its_uint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ft_printf.dir/srcs/its_uint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_printf.dir/srcs/its_uint.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_uint.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_uint.c
 
 CMakeFiles/ft_printf.dir/srcs/its_uint.c.i: cmake_force
@@ -995,7 +982,7 @@ CMakeFiles/ft_printf.dir/srcs/its_uint.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/extra_1.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/extra_1.c.o: ../srcs/extra_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ft_printf.dir/srcs/extra_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ft_printf.dir/srcs/extra_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/extra_1.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/extra_1.c
 
 CMakeFiles/ft_printf.dir/srcs/extra_1.c.i: cmake_force
@@ -1008,7 +995,7 @@ CMakeFiles/ft_printf.dir/srcs/extra_1.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/srcs/extra_2.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/srcs/extra_2.c.o: ../srcs/extra_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ft_printf.dir/srcs/extra_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ft_printf.dir/srcs/extra_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/extra_2.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/extra_2.c
 
 CMakeFiles/ft_printf.dir/srcs/extra_2.c.i: cmake_force
@@ -1018,6 +1005,19 @@ CMakeFiles/ft_printf.dir/srcs/extra_2.c.i: cmake_force
 CMakeFiles/ft_printf.dir/srcs/extra_2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/srcs/extra_2.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tharle/CLionProjects/my_printf/srcs/extra_2.c -o CMakeFiles/ft_printf.dir/srcs/extra_2.c.s
+
+CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o: CMakeFiles/ft_printf.dir/flags.make
+CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o: ../srcs/its_hex_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o   -c /Users/tharle/CLionProjects/my_printf/srcs/its_hex_2.c
+
+CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tharle/CLionProjects/my_printf/srcs/its_hex_2.c > CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.i
+
+CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tharle/CLionProjects/my_printf/srcs/its_hex_2.c -o CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.s
 
 # Object files for target ft_printf
 ft_printf_OBJECTS = \
@@ -1083,7 +1083,6 @@ ft_printf_OBJECTS = \
 "CMakeFiles/ft_printf.dir/srcs/its_float.c.o" \
 "CMakeFiles/ft_printf.dir/srcs/its_float_2.c.o" \
 "CMakeFiles/ft_printf.dir/srcs/its_hex.c.o" \
-"CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o" \
 "CMakeFiles/ft_printf.dir/srcs/its_int.c.o" \
 "CMakeFiles/ft_printf.dir/srcs/its_int_2.c.o" \
 "CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.o" \
@@ -1094,7 +1093,8 @@ ft_printf_OBJECTS = \
 "CMakeFiles/ft_printf.dir/srcs/its_str.c.o" \
 "CMakeFiles/ft_printf.dir/srcs/its_uint.c.o" \
 "CMakeFiles/ft_printf.dir/srcs/extra_1.c.o" \
-"CMakeFiles/ft_printf.dir/srcs/extra_2.c.o"
+"CMakeFiles/ft_printf.dir/srcs/extra_2.c.o" \
+"CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o"
 
 # External object files for target ft_printf
 ft_printf_EXTERNAL_OBJECTS =
@@ -1161,7 +1161,6 @@ ft_printf: CMakeFiles/ft_printf.dir/srcs/its_char.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/its_float.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/its_float_2.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/its_hex.c.o
-ft_printf: CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/its_int.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/its_int_2.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/its_unprintable.c.o
@@ -1173,6 +1172,7 @@ ft_printf: CMakeFiles/ft_printf.dir/srcs/its_str.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/its_uint.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/extra_1.c.o
 ft_printf: CMakeFiles/ft_printf.dir/srcs/extra_2.c.o
+ft_printf: CMakeFiles/ft_printf.dir/srcs/its_hex_2.c.o
 ft_printf: CMakeFiles/ft_printf.dir/build.make
 ft_printf: CMakeFiles/ft_printf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tharle/CLionProjects/my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking C executable ft_printf"

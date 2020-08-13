@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_uint.c                                           :+:      :+:    :+:   */
+/*   its_binary.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/06 12:43:43 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/13 02:18:27 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:06:54 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:06:56 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,20 +40,20 @@ void	type_b(va_list args, t_struct *params)
 	uintmax_t num;
 
 	num = 0;
-	if (params->length)
+	if (params->len)
 		num = (unsigned int)va_arg(args, int);
-	else if (params->length == SHORTSHORT)
+	else if (params->len == SHORTSHORT)
 		num = (unsigned char)va_arg(args, int);
-	else if (params->length == SHORT)
+	else if (params->len == SHORT)
 		num = (unsigned short)va_arg(args, int);
-	else if (params->length == LONG)
+	else if (params->len == LONG)
 		num = (unsigned long)va_arg(args, unsigned long);
-	else if (params->length == LONGLONG)
+	else if (params->len == LONGLONG)
 		num = (unsigned long long)va_arg(args, \
 		unsigned long long);
-	if (params->length == SIZE_T)
+	if (params->len == SIZE_T)
 		num = (size_t)va_arg(args, size_t);
-	if (params->length == INT_UINT_MAX)
+	if (params->len == _UINT_MAX)
 		num = (uintmax_t)va_arg(args, uintmax_t);
 	binary_from_fmt(params, num, 0);
 }

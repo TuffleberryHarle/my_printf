@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_int.c                                         :+:      :+:    :+:   */
+/*   its_int.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 18:34:13 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/06 12:33:06 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:07:49 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:07:50 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ void	int_checker(t_struct *params)
 int		int_printer_2(t_struct *params, char *s)
 {
 	if ((!params->width && params->dot && params->zero_arg
-	&& params->prec_zero) || (!params->width &&
-	params->dot && !params->prec && !params->prec_zero
+	&& params->prec_zero) || (!params->width
+	&& params->dot && !params->prec && !params->prec_zero
 	&& params->zero_arg))
 		return (0);
 	if (params->width && params->dot && params->zero_arg
-	&& !params->prec)
+		&& !params->prec)
 		if (params->plus)
 			write(1, "", 0);
 		else
@@ -51,16 +51,16 @@ void	int_printer(t_struct *params, char *s, int indent)
 	if (params->negative || params->plus || params->space)
 		indent--;
 	if (params->zero_arg && params->plus && params->dot &&
-	params->width && !params->prec)
+		params->width && !params->prec)
 		indent++;
 	if (params->width > params->len_before && !params->minus)
 	{
 		while (indent--)
 		{
 			params->n_printed_here += (params->zero
-					&& !params->prec) \
-			? write(1, "0", 1) : \
-			write(1, " ", 1);
+					&& !params->prec)
+							? write(1, "0", 1)
+							: write(1, " ", 1);
 		}
 	}
 	if (params->negative && !params->zero)
@@ -85,11 +85,11 @@ void	int_from_fmt(t_struct *params, intmax_t num, int i)
 		params->zero = 0;
 	if ((num == 0) && (params->len_before == 1))
 		params->zero_arg++;
-	if (params->prec && params->prec \
- > params->len_before && !params->negative)
+	if (params->prec && params->prec
+	> params->len_before && !params->negative)
 		s = int_with_prec(params, s, i);
-	else if (params->prec && params->prec > \
-	params->len_before && params->negative)
+	else if (params->prec && params->prec
+	> params->len_before && params->negative)
 		s = int_with_prec(params, s, i);
 	params->len_before = ft_strlen(s);
 	int_printer(params, s, indent);
@@ -104,19 +104,19 @@ void	its_int(va_list args, t_struct *params)
 	intmax_t num;
 
 	num = 0;
-	if (params->length == 0)
+	if (params->len == 0)
 		num = (int)va_arg(args, int);
-	if (params->length == SHORTSHORT)
+	if (params->len == SHORTSHORT)
 		num = (signed char)va_arg(args, int);
-	if (params->length == SHORT)
+	if (params->len == SHORT)
 		num = (short int)va_arg(args, int);
-	if (params->length == LONG)
+	if (params->len == LONG)
 		num = (long int)va_arg(args, long int);
-	if (params->length == LONGLONG)
+	if (params->len == LONGLONG)
 		num = (long long int)va_arg(args, long long int);
-	if (params->length == SIZE_T)
+	if (params->len == SIZE_T)
 		num = (size_t)va_arg(args, size_t);
-	if (params->length == INT_UINT_MAX)
+	if (params->len == _UINT_MAX)
 		num = (intmax_t)va_arg(args, intmax_t);
 	if (params->dot > 1 && params->prec)
 	{

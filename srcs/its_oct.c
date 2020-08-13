@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_oct.c                                         :+:      :+:    :+:   */
+/*   its_oct.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/02 13:36:52 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/13 04:36:11 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:08:05 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:08:07 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int		oct_printer_2(t_struct *prms, char *s)
 {
 	if ((!prms->width && prms->dot && prms->zero_arg
 	&& prms->prec_zero)
-	|| (!prms->width && prms->dot && !prms->prec &&
-	!prms->prec_zero && prms->zero_arg))
+	|| (!prms->width && prms->dot && !prms->prec
+	&& !prms->prec_zero && prms->zero_arg))
 	{
 		if (prms->hash_case)
 		{
@@ -27,7 +27,7 @@ int		oct_printer_2(t_struct *prms, char *s)
 		return (0);
 	}
 	if (prms->width && prms->dot && prms->zero_arg &&
-	!prms->prec && !prms->hash_case)
+		!prms->prec && !prms->hash_case)
 		prms->n_printed_here += write(1, " ", 1);
 	else
 		prms->n_printed_here += write(1, s, prms->len_before);
@@ -68,7 +68,7 @@ void	oct_hash_checker(t_struct *prms, int num)
 	if (prms->hash && prms->width && !prms->prec && prms->zero_arg)
 		prms->hash_case++;
 	if (prms->hash && prms->dot && !prms->prec
-	&& !prms->prec_zero && prms->zero_arg)
+		&& !prms->prec_zero && prms->zero_arg)
 		prms->hash = 0;
 	if (prms->zero_arg)
 		prms->hash = 0;
@@ -105,15 +105,15 @@ void	its_oct(va_list args, t_struct *params)
 	uintmax_t num;
 
 	num = 0;
-	if (params->length == 0)
+	if (params->len == 0)
 		num = va_arg(args, unsigned int);
-	if (params->length == SHORTSHORT)
+	if (params->len == SHORTSHORT)
 		num = (unsigned char)va_arg(args, unsigned int);
-	if (params->length == SHORT)
+	if (params->len == SHORT)
 		num = (unsigned short)va_arg(args, unsigned int);
-	if (params->length == LONG)
+	if (params->len == LONG)
 		num = (unsigned long)va_arg(args, unsigned long);
-	if (params->length == LONGLONG)
+	if (params->len == LONGLONG)
 		num = (unsigned long long)va_arg(args, unsigned long long);
 	oct_from_fmt(params, num, 0);
 }

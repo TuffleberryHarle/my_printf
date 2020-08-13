@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coclayto <coclayto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/18 20:15:37 by releanor          #+#    #+#             */
-/*   Updated: 2020/06/16 22:47:59 by coclayto         ###   ########.fr       */
+/*   Created: 2020/08/13 16:02:54 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:02:57 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 # define LONGLONG		4
 # define LONGDOUBLE		7
 # define SIZE_T			8
-# define INT_UINT_MAX	9
+# define _UINT_MAX	9
 
 typedef struct	s_struct
 {
@@ -53,7 +53,7 @@ typedef struct	s_struct
 	int			prec_was;
 	int			prec_zero;
 	int			indent;
-	int			length;
+	int			len;
 	int			after_perc;
 	char		*f_before;
 	char		*f_after;
@@ -62,95 +62,91 @@ typedef struct	s_struct
 }				t_struct;
 
 int				ft_printf(const char *fmt, ...);
-int				format_parse(va_list args, const char *fmt, \
-				t_struct *prms);
-int				parse_normal(va_list args, t_struct *prms, const char *fmt);
-int				parse_text_after_percent(t_struct *prms, const char *fmt);
-int				conversions(va_list args, char spec, t_struct *params);
-int				conversions2(va_list args, char spec, t_struct *params);
-int				modifiers(va_list args, const char *fmt, t_struct *params);
-void			bzerostruct(t_struct *params, int full);
+int				parser(va_list args, const char *fmt, t_struct *params);
+int				usual_parser(va_list args, t_struct *params, const char *fmt);
+int				after_perc_parser(t_struct *params, const char *fmt);
+int				convertor(va_list args, char letter, t_struct *params);
+int				convertor_2(va_list args, char spec, t_struct *params);
+int				modifier(va_list args, const char *fmt, t_struct *params);
+void			bzero_struct(t_struct *params, int full);
 
-void			length_field(const char *fmt, t_struct *params);
-void			flags(const char *fmt, t_struct	*params);
-void			width(const char *fmt, t_struct	*params);
-void			precision(const char *fmt, t_struct	*params);
+void			length_hooker(const char *fmt, t_struct *prms);
+void			flag_modifier(const char *fmt, t_struct	*params);
+void			width_determer(const char *fmt, t_struct	*prm);
+void			precision_determer(const char *fmt, t_struct	*prm);
 
-void			type_int(va_list args, t_struct *params);
+void			its_int(va_list args, t_struct *params);
 void			int_from_fmt(t_struct *params, intmax_t num, int i);
-void			int_print(t_struct *params, char *s, int indent);
-int				int_print2(t_struct *params, char *s);
+void			int_printer(t_struct *params, char *s, int indent);
+int				int_printer_2(t_struct *params, char *s);
 char			*int_with_prec(t_struct *params, char *s, int i);
-void			int_chk(t_struct *params);
-char			*int_overflow_chk(intmax_t num, char *s);
+void			int_checker(t_struct *params);
+char			*int_overflow_checker(intmax_t num, char *s);
 
-void			type_char(va_list args, t_struct *prms);
-void			char_print(t_struct *params, char c, int indent);
+void			its_char(va_list args, t_struct *params);
+void			char_printer(t_struct *params, char c, int indent);
 
-void			type_str(va_list args, t_struct *params);
-void			str_print(t_struct *params, char *s);
-void			str_print2(t_struct *params);
+void			its_str(va_list args, t_struct *params);
+void			str_printer(t_struct *params, char *s);
+void			str_printer_2(t_struct *params);
 
-void			type_ptr(va_list args, t_struct *params);
-void			ptr_print(t_struct *prms, char *s);
-void			ptr_print2(t_struct *prms, char*s);
-void			ptr_print3(t_struct *prms, char*s);
-void			ptr_print4(t_struct *prms, char*s);
-void			ptr_chk(t_struct *prms);
+void			its_ptr(va_list args, t_struct *params);
+void			ptr_printer(t_struct *params, char *s);
+void			ptr_printer_2(t_struct *params, char*s);
+void			ptr_printer_3(t_struct *params, char*s);
+void			ptr_printer_4(t_struct *params, char*s);
+void			ptr_checker(t_struct *params);
 
-void			type_uint(va_list args, t_struct *params, char spec);
-void			uint_from_fmt(t_struct *prms, uintmax_t num, int i);
-char			*uint_with_prec(t_struct *prms, char *s, int i);
-void			uint_printer(t_struct *prms, char *s, int indent);
-int				uint_printer_2(t_struct *prms, char *s);
+void			its_uint(va_list args, t_struct *params, char spec);
+void			uint_from_fmt(t_struct *params, uintmax_t num, int i);
+char			*uint_with_prec(t_struct *params, char *s, int i);
+void			uint_printer(t_struct *params, char *s, int indent);
+int				uint_printer_2(t_struct *params, char *s);
 
-void			type_oct(va_list args, t_struct *prms);
-void			oct_from_fmt(t_struct *prms, uintmax_t num, int i);
+void			its_oct(va_list args, t_struct *params);
+void			oct_from_fmt(t_struct *params, uintmax_t num, int i);
 char			*oct_with_prec(t_struct *prms, char *s, int i);
-char			*oct_hash(t_struct *prms, char *s);
-void			oct_hash_chk(t_struct *prms, int num);
-void			oct_print(t_struct *prms, char *s, int indent);
-int				oct_print2(t_struct *prms, char *s);
+char			*oct_hash(t_struct *params, char *s);
+void			oct_hash_checker(t_struct *prms, int num);
+void			oct_printer(t_struct *params, char *s, int indent);
+int				oct_printer_2(t_struct *prms, char *s);
 
-void			type_hex(va_list args, t_struct *prms, char spec);
+void			its_hex(va_list args, t_struct *params, char spec);
 void			hex_from_fmt(t_struct *params, uintmax_t num, int i);
-void			hex_from_fmt2(t_struct *params, char *s, int indent);
+void			hex_from_fmt_2(t_struct *params, char *s, int indent);
 char			*hex_hash(t_struct *params, char *s);
 char			*hex_with_prec(t_struct *params, char *s, int i);
-void			hex_hash_chk(t_struct *params, int num);
-void			hex_print(t_struct *prms, char *s, int indent);
-int				hex_print2(t_struct *params, char *s);
+void			hex_hash_checker(t_struct *params, int num);
+void			hex_printer(t_struct *params, char *s, int indent);
+int				hex_printer_2(t_struct *params, char *s);
 
-void			type_float(va_list args, t_struct *params);
-void			float_math(long double num, t_struct *params);
-char			*integer_math(long double num, int end);
-void			decimal_math(long double num, t_struct *params);
-int				is_infnan(t_struct *params, long double num);
+void			its_float(va_list args, t_struct *params);
+void			float_solver(long double num, t_struct *params);
+char			*int_solver(long double num, int end);
+void			decimal_solver(long double num, t_struct *params);
+int				is_inf_nan(t_struct *params, long double num);
 int				is_odd(char symb);
-void			rounding(long double num, t_struct *params, int i);
+void			rounding_up(long double num, t_struct *params, int i);
 void			f_increment(t_struct *params);
-void			float_print(t_struct *params);
-void			float_print2(t_struct *params);
-
-void			writezeros(int n);
-void			writeblanks(int n);
+void			float_printer(t_struct *params);
+void			float_printer_2(t_struct *params);
 
 int				num_len(intmax_t num, int base);
-int				unsigned_num_len(uintmax_t num, int base);
+int				uint_num_len(uintmax_t num, int base);
 int				float_num_len(long double num);
 long double		ft_atof(char *str);
 char			*itoa_base(t_struct *params, intmax_t num, int base);
-char			*itoa_base_unsigned(uintmax_t num, int base);
-char			*itoa_base_upp(uintmax_t num, int base);
+char			*itoa_base_uint(uintmax_t num, int base);
+char			*itoa_base_uppercase(uintmax_t num, int base);
 
-long double		power(long long n, int i);
-void			percent(t_struct *params);
+long double		to_power(long long n, int i);
+void			percent_printer(t_struct *params);
 
-void			create_nonprint_str(va_list args, t_struct *params);
-int				recalc_len(char *s, int i);
-void			recreate_str(char *s, char *s_nonpr, int i, int j);
+void			unprintable_creator(va_list args, t_struct *params);
+int				len_determer(char *s, int i);
+void			str_recreator(char *s, char *s_unpr, int i, int j);
 
-void			type_b(va_list args, t_struct *prms);
-void			b_from_fmt(t_struct *prms, uintmax_t num, int i);
+void			type_b(va_list args, t_struct *params);
+void			binary_from_fmt(t_struct *params, uintmax_t num, int i);
 
 #endif

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_float.c                                       :+:      :+:    :+:   */
+/*   its_float.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coclayto <coclayto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/25 07:27:41 by coclayto          #+#    #+#             */
-/*   Updated: 2020/06/16 22:46:59 by coclayto         ###   ########.fr       */
+/*   Created: 2020/08/13 16:07:15 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:07:17 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,11 +108,11 @@ void	its_float(va_list args, t_struct *params)
 {
 	long double num;
 
-	if (params->length == LONG)
+	if (params->len == LONG)
 		num = (double)va_arg(args, double);
-	if (params->length == LONGDOUBLE)
+	if (params->len == LONGDOUBLE)
 		num = (long double)va_arg(args, long double);
-	if (params->length == 0)
+	if (params->len == 0)
 		num = (double)va_arg(args, double);
 	if (is_inf_nan(params, num))
 	{

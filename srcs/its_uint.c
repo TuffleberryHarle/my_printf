@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_uint.c                                           :+:      :+:    :+:   */
+/*   its_uint.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/06 12:43:43 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/13 02:18:27 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:09:06 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:09:07 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int		uint_printer_2(t_struct *params, char *s)
 {
 	if (!params->width && params->dot && s[0] == '0'
-	&& params->len_before == 1)
+		&& params->len_before == 1)
 		return (0);
 	else if (params->dot && s[0] == '0' && params->len_before == 1)
 		params->n_printed_here += write(1, " ", params->len_before);
@@ -55,8 +55,8 @@ char	*uint_with_prec(t_struct *params, char *s, int i)
 	int		j;
 
 	j = 0;
-	if (!(s_prec = (char *)malloc(sizeof(char) *
-			(params->prec + 1))))
+	if (!(s_prec = (char *)malloc(sizeof(char)
+			* (params->prec + 1))))
 		s_prec = NULL;
 	while (i < (params->prec - params->len_before))
 	{
@@ -102,20 +102,20 @@ void	its_uint(va_list args, t_struct *params, char spec)
 	uintmax_t num;
 
 	num = 0;
-	if (params->length == 0 && spec == 'u')
+	if (params->len == 0 && spec == 'u')
 		num = (unsigned int)va_arg(args, int);
-	else if (params->length == SHORTSHORT && spec == 'u')
+	else if (params->len == SHORTSHORT && spec == 'u')
 		num = (unsigned char)va_arg(args, int);
-	else if (params->length == SHORT && spec == 'u')
+	else if (params->len == SHORT && spec == 'u')
 		num = (unsigned short)va_arg(args, int);
-	else if (params->length == LONG || spec == 'U')
+	else if (params->len == LONG || spec == 'U')
 		num = (unsigned long)va_arg(args, unsigned long);
-	else if (params->length == LONGLONG)
+	else if (params->len == LONGLONG)
 		num = (unsigned long long)va_arg(args,
 				unsigned long long);
-	if (params->length == SIZE_T)
+	if (params->len == SIZE_T)
 		num = (size_t)va_arg(args, size_t);
-	if (params->length == INT_UINT_MAX)
+	if (params->len == _UINT_MAX)
 		num = (uintmax_t)va_arg(args, uintmax_t);
 	uint_from_fmt(params, num, 0);
 }

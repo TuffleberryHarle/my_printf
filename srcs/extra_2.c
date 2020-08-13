@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utility_2.c                                        :+:      :+:    :+:   */
+/*   extra_2.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coclayto <coclayto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/17 22:53:04 by coclayto          #+#    #+#             */
-/*   Updated: 2020/06/16 22:47:37 by coclayto         ###   ########.fr       */
+/*   Created: 2020/08/13 16:06:33 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:06:35 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void		bzero_struct(t_struct *params, int full)
 	params->prec_was = 0;
 	params->indent = 0;
 	params->prec_zero = 0;
-	params->length = 0;
+	params->len = 0;
 	params->len_before = 0;
 	params->len_after = 0;
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   its_hex.c                                         :+:      :+:    :+:   */
+/*   its_hex.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: releanor <releanor@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/06 11:55:06 by releanor          #+#    #+#             */
-/*   Updated: 2020/03/06 20:00:16 by releanor         ###   ########.fr       */
+/*   Created: 2020/08/13 16:07:33 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 16:07:36 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		hex_printer_2(t_struct *params, char *s)
 	&& !params->prec && !params->prec_zero && params->zero_arg))
 		return (0);
 	if (params->width && params->dot &&
-	params->zero_arg && !params->prec)
+		params->zero_arg && !params->prec)
 		params->n_printed_here += write(1, " ", 1);
 	else
 		params->n_printed_here += write(1, s, params->len_before);
@@ -38,7 +38,8 @@ void	hex_printer(t_struct *params, char *s, int indent)
 	if (params->hash_case_zero)
 	{
 		params->n_printed_here += (params->small_hex == 1) ?
-				write(1, "0x", 2) : write(1, "0X", 2);
+				write(1, "0x", 2)
+				: write(1, "0X", 2);
 		indent -= 2;
 	}
 	if (params->width > params->len_before && !params->minus)
@@ -46,8 +47,8 @@ void	hex_printer(t_struct *params, char *s, int indent)
 		while (indent--)
 		{
 			params->n_printed_here += (params->zero
-					&& !params->prec) ? write(1, "0", 1) :
-							write(1, " ", 1);
+					&& !params->prec) ? write(1, "0", 1)
+							: write(1, " ", 1);
 		}
 	}
 	if (params->space && !params->negative)
@@ -80,14 +81,14 @@ void	hex_from_fmt(t_struct *params, uintmax_t num, int i)
 
 	indent = 0;
 	params->len_before = uint_num_len(num, 16);
-	s = (params->small_hex == 1) ? \
-    itoa_base_uint(num, 16) :
-    		itoa_base_uppercase(num, 16);
+	s = (params->small_hex == 1)
+			? itoa_base_uint(num, 16)
+			: itoa_base_uppercase(num, 16);
 	hex_hash_checker(params, num);
 	if (params->prec > params->len_before)
 		s = hex_with_prec(params, s, i);
 	if (params->hash && params->zero &&
-	params->width && !params->prec)
+		params->width && !params->prec)
 	{
 		params->hash_case_zero++;
 		params->hash = 0;
@@ -100,20 +101,20 @@ void	its_hex(va_list args, t_struct *params, char spec)
 	uintmax_t num;
 
 	num = 0;
-	if (!params->length)
+	if (!params->len)
 		num = va_arg(args, unsigned int);
-	if (params->length == SHORTSHORT)
+	if (params->len == SHORTSHORT)
 		num = (unsigned char)va_arg(args, unsigned int);
-	if (params->length == SHORT)
+	if (params->len == SHORT)
 		num = (unsigned short)va_arg(args, unsigned int);
-	if (params->length == LONG)
+	if (params->len == LONG)
 		num = (unsigned long)va_arg(args, unsigned long);
-	if (params->length == LONGLONG)
+	if (params->len == LONGLONG)
 		num = (unsigned long long)va_arg(args,
 				unsigned long long);
-	if (params->length == SIZE_T)
+	if (params->len == SIZE_T)
 		num = (size_t)va_arg(args, size_t);
-	if (params->length == INT_UINT_MAX)
+	if (params->len == _UINT_MAX)
 		num = (uintmax_t)va_arg(args, uintmax_t);
 	params->small_hex = (spec == 'x') ? 1 : 0;
 	hex_from_fmt(params, num, 0);
