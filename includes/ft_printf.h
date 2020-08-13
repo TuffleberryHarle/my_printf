@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coclayto <coclayto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tharle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/18 20:15:37 by releanor          #+#    #+#             */
-/*   Updated: 2020/06/16 22:47:59 by coclayto         ###   ########.fr       */
+/*   Created: 2020/08/13 14:58:41 by tharle            #+#    #+#             */
+/*   Updated: 2020/08/13 14:58:57 by tharle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
+# ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
 # include <stdarg.h>

@@ -2,26 +2,25 @@ NAME = libftprintf.a
 
 FLAGS = -Wall -Wextra -Werror -g
 
-SOURCES = 	ft_printf.c \
-			conversions.c \
-			its_char.c \
-			its_str.c \
-			its_ptr.c \
-			its_ptr_2.c \
-			its_int.c \
-			its_int_2.c \
-			its_uint.c \
-			its_oct.c \
-			its_oct_2.c \
-			its_hex.c \
-			its_hex_2.c \
-			its_float.c \
-			its_float_2.c \
-			its_unprintable.c \
-			its_binary.c
-			extra_1.c \
-			extra_2.c \
-			modifier.c \
+SOURCES = conversions.c \
+		ft_printf.c \
+		modifiers.c \
+		its_binary.c \
+		its_char.c \
+		its_float.c \
+		its_float_2.c \
+		its_hex.c \
+		its_hex_2.c \
+		its_int.c \
+		its_int_2.c \
+		its_unprintable.c \
+		its_oct.c \
+		its_oct_2.c \
+		its_ptr_2.c \
+		its_str.c \
+		its_uint.c \
+		extra_1.c \
+		extra_2.c
 
 HEADER = includes
 
